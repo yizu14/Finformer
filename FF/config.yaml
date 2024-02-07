@@ -1,0 +1,19 @@
+date_config: &date_config
+  START_TIME : '20100101'
+  END_TIME : '20221231'
+  FIT_START : '20100101'
+  FIT_END : '20151231'
+  VALID_START : '20160101'
+  VALID_END : '20171231'
+  TEST_START : '20180101'
+  TEST_END : '20221231'
+model: &model
+  d_feat : 6
+  hidden_size : 64
+  num_layers : 2
+  temporal_dropout : 0.4
+  snum_head : 4
+  device: 0
+port_config: &port_config
+  TOP_K : 30
+  N_DROP : 30
