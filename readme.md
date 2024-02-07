@@ -19,11 +19,17 @@ Our tests are based on CSI300 and CSI100 datasets. Unfortunately, due to the ori
 ## How to Run Our Model
 
 eval_notebook.ipynb - A performance evaluation notebook
+
 config.yaml - Model configuration include hyperparameters, train/valid/test dates and portfolio configurations can be set here.
+
 loader.py - Cross-sectional dataloader. We used a modified version of MTSDataset provided by TRA (Lin, Hengxu, et al. "Learning multiple stock trading patterns with temporal routing adaptor and optimal transport." SIGKDD '21).
+
 metrics.py - Metrics implementation and a modified version of TopkDropoutStrategy (See paper V.E. Portfolio Evaluation).
+
 model.py - Architecture of Finformer
+
 utils.py - Graph and dataset process functions
+
 train.py - Training framework
 
 It can be run by execute the train.py after configure the data path correctly.
